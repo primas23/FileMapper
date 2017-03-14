@@ -1,2 +1,2 @@
-# FileMapper
-File Mapper for mapping csv to/from xls
+# File Manager
+File Manager for trasfering and converting files
