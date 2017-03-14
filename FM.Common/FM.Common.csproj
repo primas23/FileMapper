@@ -47,6 +47,7 @@
     <Compile Include="Contracts\IFileManager.cs" />
     <Compile Include="Contracts\IFileProvider.cs" />
     <Compile Include="Contracts\ILogger.cs" />
+    <Compile Include="Contracts\IServiceMapper.cs" />
     <Compile Include="FileProviders\XlsFileProvider.cs" />
     <Compile Include="FileProviders\CsvFileProvider.cs" />
     <Compile Include="FileLogger.cs" />

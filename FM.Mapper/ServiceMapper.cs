@@ -4,7 +4,7 @@ using FM.Common.Contracts;
 
 namespace FM.Mapper
 {
-    public class ServiceMapper
+    public class ServiceMapper : IServiceMapper
     {
         private readonly IFileManager _fileManager;
         private readonly ILogger _logger;
@@ -39,8 +39,8 @@ namespace FM.Mapper
         {
             // TODO: Guard clause
 
-            _fileManager.GetFile("demo_utf8.csv");
-            _fileManager.GetFile("orderslist_2017-03-13_125444.xls");
+            var csv = _fileManager.GetFile("demo_utf8.csv");
+            var xls = _fileManager.GetFile("orderslist_2017-03-13_125444.xls");
 
             return true;
         }

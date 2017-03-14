@@ -3,6 +3,7 @@
 using FM.Common;
 using FM.Common.Contracts;
 using FM.Common.FileProviders;
+using FM.Mapper;
 
 namespace FM.ConsoleClient
 {
@@ -12,6 +13,7 @@ namespace FM.ConsoleClient
         {
             Bind<ILogger>().To<FileLogger>();
             Bind<IFileManager>().To<FileManager>();
+            Bind<IServiceMapper>().To<ServiceMapper>();
 
             Bind<IFileProvider>().To<CsvFileProvider>();
             Bind<IFileProvider>().To<XlsFileProvider>();

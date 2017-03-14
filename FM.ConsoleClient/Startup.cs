@@ -17,7 +17,7 @@ namespace FM.ConsoleClient
         {
             IKernel kernel = new StandardKernel(new NinjectBindings());
 
-            var mapper = new ServiceMapper(kernel.Get<IFileManager>(), kernel.Get<ILogger>());
+            var mapper = kernel.Get<IServiceMapper>();
             mapper.MapXlxToCsv("", "");
         }
     }
