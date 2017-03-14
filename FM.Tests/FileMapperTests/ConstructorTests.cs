@@ -19,7 +19,7 @@ namespace FM.Tests.FileMapperTests
             var mockedLogger = new Mock<ILogger>();
 
             // Act and assert
-            ThrowsAssert.Throws<ArgumentNullException>(() => new FileMapper(null, mockedLogger.Object));
+            ThrowsAssert.Throws<ArgumentNullException>(() => new ServiceMapper(null, mockedLogger.Object));
         }
 
         [TestMethod]
@@ -30,7 +30,7 @@ namespace FM.Tests.FileMapperTests
 
             // Act
             var exceptionThrown = ThrowsAssert
-                .Throws<ArgumentNullException>(() => new FileMapper(null, mockedLogger.Object));
+                .Throws<ArgumentNullException>(() => new ServiceMapper(null, mockedLogger.Object));
 
             // Assert
             StringAssert.Contains(exceptionThrown.Message.ToLower(), "filemanager is null".ToLower());
@@ -43,7 +43,7 @@ namespace FM.Tests.FileMapperTests
             var mockedManger = new Mock<IFileManager>();
 
             // Act and assert
-            ThrowsAssert.Throws<ArgumentNullException>(() => new FileMapper(mockedManger.Object, null));
+            ThrowsAssert.Throws<ArgumentNullException>(() => new ServiceMapper(mockedManger.Object, null));
         }
     }
 }

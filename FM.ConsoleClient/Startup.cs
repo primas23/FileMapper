@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using FM.Common;
-using FM.Common.FileProviders;
+using Ninject;
+
 using FM.Common.Contracts;
 using FM.Mapper;
 
@@ -15,7 +15,10 @@ namespace FM.ConsoleClient
     {
         public static void Main()
         {
-            var mapper = new FileMapper(new FileManager(new List<IFileProvider>() { new CsvFileProvider(), new XlsFileProvider() }), new FileLogger()).MapXlxToCsv("", "");
+            IKernel kernel = new StandardKernel(new NinjectBindings());
+
+            var mapper = new ServiceMapper(kernel.Get<IFileManager>(), kernel.Get<ILogger>());
+            mapper.MapXlxToCsv("", "");
         }
     }
 }
