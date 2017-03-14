@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Ninject;
+﻿using Ninject;
 
 using FM.Common.Contracts;
-using FM.Mapper;
 
 namespace FM.ConsoleClient
 {
@@ -17,8 +10,8 @@ namespace FM.ConsoleClient
         {
             IKernel kernel = new StandardKernel(new NinjectBindings());
 
-            var mapper = kernel.Get<IServiceMapper>();
-            mapper.MapXlxToCsv("", "");
+            IServiceMapper mapper = kernel.Get<IServiceMapper>();
+            mapper.MapXlxToCsv("asdasd", "asdasd");
         }
     }
 }

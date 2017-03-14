@@ -45,7 +45,15 @@ namespace FM.Mapper
         /// </returns>
         public bool MapXlxToCsv(string xlsFilePath, string csvFilePath)
         {
-            // TODO: Guard clause
+            if (string.IsNullOrWhiteSpace(xlsFilePath))
+            {
+                throw new ArgumentNullException("xlsFilePath is null");
+            }
+
+            if (string.IsNullOrWhiteSpace(csvFilePath))
+            {
+                throw new ArgumentNullException("csvFilePath is null");
+            }
 
             var csv = _fileManager.GetFile("demo_utf8.csv");
             var xls = _fileManager.GetFile("orderslist_2017-03-13_125444.xls");
