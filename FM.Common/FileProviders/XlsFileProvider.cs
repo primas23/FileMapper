@@ -8,7 +8,7 @@ using Excel = Microsoft.Office.Interop.Excel;
 using FM.Common.Contracts;
 using FM.Models;
 
-namespace FM.Common
+namespace FM.Common.FileProviders
 {
     public class XlsFileProvider : IFileProvider
     {
@@ -30,8 +30,7 @@ namespace FM.Common
             }
 
             RowsFile rowsFile = new RowsFile();
-
-            string str;
+            
             int rowIndex;
             int columnIndex;
             int rowsCount = 0;

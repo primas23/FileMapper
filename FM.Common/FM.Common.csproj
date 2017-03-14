@@ -47,8 +47,8 @@
     <Compile Include="Contracts\IFileManager.cs" />
     <Compile Include="Contracts\IFileProvider.cs" />
     <Compile Include="Contracts\ILogger.cs" />
-    <Compile Include="XlsFileProvider.cs" />
-    <Compile Include="CsvFileProvider.cs" />
+    <Compile Include="FileProviders\XlsFileProvider.cs" />
+    <Compile Include="FileProviders\CsvFileProvider.cs" />
     <Compile Include="FileLogger.cs" />
     <Compile Include="FileManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

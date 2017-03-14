@@ -5,7 +5,7 @@ using System.Linq;
 using FM.Common.Contracts;
 using FM.Models;
 
-namespace FM.Common
+namespace FM.Common.FileProviders
 {
     public class CsvFileProvider : IFileProvider
     {
