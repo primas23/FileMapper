@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FM.Mapper", "FM.Mapper\FM.M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FM.Models", "FM.Models\FM.Models.csproj", "{1069BCDD-CF67-4154-8EF7-5D8E31017C7C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FM.Tests", "FM.Tests\FM.Tests.csproj", "{C5C12D37-7F0C-4ADA-B2F8-DB4977911838}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{1069BCDD-CF67-4154-8EF7-5D8E31017C7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1069BCDD-CF67-4154-8EF7-5D8E31017C7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1069BCDD-CF67-4154-8EF7-5D8E31017C7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5C12D37-7F0C-4ADA-B2F8-DB4977911838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5C12D37-7F0C-4ADA-B2F8-DB4977911838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5C12D37-7F0C-4ADA-B2F8-DB4977911838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5C12D37-7F0C-4ADA-B2F8-DB4977911838}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
