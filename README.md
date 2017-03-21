@@ -1,2 +1,2 @@
 # File Manager
-(Project canceld) File Manager for trasfering and converting files
+(Project canceld by the client) File Manager for trasfering and converting files
